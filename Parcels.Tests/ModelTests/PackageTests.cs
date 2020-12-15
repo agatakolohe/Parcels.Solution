@@ -28,7 +28,7 @@ namespace Parcels.Tests
         {
             Package newPackage = new Package(2,3,4,5);
             newPackage.Volume = 10;
-            int testCost = 42;
+            int testCost = 45;
             int shippingCost = newPackage.CostToShip();
             Assert.AreEqual(testCost, shippingCost);
         }
