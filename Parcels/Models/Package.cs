@@ -22,7 +22,7 @@ namespace Parcels.Models
       public void GetVolume()
       {
           int volume = Length * Height * Width;
-          this.Volume = volume;
+          Volume = volume;
       }
 
       public int CostToShip()

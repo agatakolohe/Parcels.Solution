@@ -18,7 +18,7 @@ namespace Parcels.Tests
         public void GetVolume_GetsVolumeOfPackage_Int()
         {
             Package newPackage = new Package(2, 3, 4, 5);
-            int testVolume = 20;
+            int testVolume = 24;
             newPackage.GetVolume();
             Assert.AreEqual(testVolume, newPackage.Volume);
 
