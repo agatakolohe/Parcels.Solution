@@ -1,5 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
-using ToDoList.Models;
+using Parcels.Models;
 
 namespace Parcels.Controllers
 {
@@ -9,7 +9,7 @@ namespace Parcels.Controllers
     [Route("/")]
     public ActionResult Index()
     {
-      Item starterPackage = new Item("Welcome");
+      Package starterPackage = new Package(1, 1, 1, 1);
       return View(starterPackage);
     }
 
