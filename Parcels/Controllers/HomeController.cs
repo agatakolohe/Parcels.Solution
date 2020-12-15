@@ -6,11 +6,26 @@ namespace Parcels.Controllers
   public class HomeController : Controller
   {
 
-    [Route("/")]
+    [HttpGet("/")]
     public ActionResult Index()
     {
-      Package starterPackage = new Package(1, 1, 1, 1);
-      return View(starterPackage);
+      return View();
+    }
+
+    [HttpGet("/cost")]
+    public ActionResult Cost()
+    {
+      return View();
+    }
+
+    [HttpPost("/cost")]
+    public ActionResult Cost(int length, int height, int width, int weight)
+    {
+      Package newPackage = new Package(length, height, width, weight);
+      newPackage.GetVolume();
+      newPackage.CostToShip();
+      
+      return View (newPackage); 
     }
 
   }

@@ -10,6 +10,7 @@ namespace Parcels.Models
       public int Weight { get; set; }
       public int Volume { get; set; }
       public int ShippingPrice { get; set; } = 3;
+      public int Cost { get; set; }
 
       public Package (int length, int height, int width, int weight)
       {
@@ -25,9 +26,10 @@ namespace Parcels.Models
           Volume = volume;
       }
 
-      public int CostToShip()
+      public void CostToShip()
       {
-          return (Volume + Weight) * ShippingPrice;
+          int cost = (Volume + Weight) * ShippingPrice;
+          Cost = cost;
       }
     }
 }

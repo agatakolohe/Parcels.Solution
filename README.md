@@ -1,11 +1,11 @@
-# Leap Year
+# Parcel
 
-#### **12/07/2020**
+#### **12/15/2020**
 
-## By _Callie Stump & Harrison Strand_
+## By _Agata Kolodziej, Eric Endsley & Callie Stump_
 ---
 ## 🚩 **Description**
-This is a console application that allows the user to enter a year and then determine whether it is a leap year or not. This project is primarily for testing.
+This is a webpage that allows the user to enter package details and then return the calculated price for shipment.
 
 ## Specs
 Parcel Class(length, height, width, weight)
@@ -25,14 +25,16 @@ volume * 3
 * C# V:7.3
 * .NET Core V:2.2
 * dotnet script, REPL
+* HTML
+* CSS
 
 ## 🔧 **Setup/Installation Requirements**
 #### The Technologies listed above are required to run this program.
-1. Copy this download link: https://github.com/calliestump/leap-year.git
+1. Copy this download link: https://github.com/calliestump/Parcels.git
 2. Open bash and go to the directory where you would like to store your cloned project.
 3. Clone the repo.
 ```
-git clone https://github.com/calliestump/leap-year.git
+git clone https://github.com/calliestump/Parcels.git
 ```
 4. Navigate to the cloned project folder and open VS code.
 ```
@@ -44,7 +46,9 @@ $ code .
 ```
 dotnet restore
 ```
-6. If you wish to see if everything is compiling correctly go to the Bakery directory and run the following:
+Testing Syntax: ```dotnet test```
+
+6. If you wish to see if everything is compiling correctly go to the Parcel directory and run the following:
 ```
 dotnet build
 ```
@@ -89,6 +93,7 @@ Feel free to contact me with any concerns or questions regarding this program at
     <td></td>
   </tr>
 </table> 
+</details>
 
 ## Legal
-Copyright (c) 2020 Callie Stump
+Copyright (c) 2020 Callie Stump, Agata Kolodziej, Eric Endsley
