@@ -11,10 +11,10 @@ namespace Parcels.Tests
         {
             Package newPackage = new Package(1, 1, 1, 1);
             Assert.AreEqual(typeof(Package), newPackage.GetType());
-            Assert.AreEqual(2, newPackage.Width);
-            
+            Assert.AreEqual(1, newPackage.Width);
+
         }
         
     }
     
-}
+} 
