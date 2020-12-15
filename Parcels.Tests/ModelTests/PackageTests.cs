@@ -14,6 +14,15 @@ namespace Parcels.Tests
             Assert.AreEqual(1, newPackage.Width);
 
         }
+        [TestMethod]
+        public void GetVolume_GetsVolumeOfPackage_Int()
+        {
+            Package newPackage = new Package(2, 3, 4, 5);
+            int testVolume = 20;
+            newPackage.GetVolume();
+            Assert.AreEqual(testVolume, newPackage.Volume);
+
+        }
         
     }
     
